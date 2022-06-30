@@ -1,5 +1,5 @@
-import UnityEngine
+import UnityEngine as ue
 
-all_objects = UnityEngine.Object.FindObjectsOfType(UnityEngine.GameObject)
+all_objects = ue.Object.FindObjectsOfType(ue.GameObject)
 for go in all_objects:
-    print(go)
+    ue.Debug.log(go.name)
